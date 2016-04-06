@@ -15,17 +15,17 @@ int main (int argc, char *argv[]) {
    if (argc > 1)
    {
    	
-      for (count = 1; count < argc; count++)
-		{
-	    /* print the noun and plural form of the each word */ 
+        for (count = 1; count < argc; count++)
+	{
+	/* print the noun and plural form of the each word */ 
         printf("noun: %s\n", argv[count]);
-	    pluralize (argv[count]);
-	    printf("plural: %s\n\n", argv[count]);
-		}
+	pluralize (argv[count]);
+	printf("plural: %s\n\n", argv[count]);
 	}
+  }
 	else
 	{
-		printf("ERROR: You must pass the nouns to be pluralized as program arguments");
+	printf("ERROR: You must pass the nouns to be pluralized as program arguments");
 	}
   
   /* return successfully */ 
